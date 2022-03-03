@@ -1,0 +1,22 @@
+
+html {
+  font-family: 'Roboto Mono', monospace;
+}
+.navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+.navegador div a {
+  font-size: 1.6rem;
+}
+.navegador img{
+  width: 4rem;  
+}
+.header{
+  background-image: url(https://images4.alphacoders.com/442/44298.jpg);
+  width: 100%;
+  height: 100%;
+}
