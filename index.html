@@ -8,13 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./src/styles/bootstrap.css">
-  <link rel="stylesheet" href="./src/js/bootstrap.bundle.js">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./src/styles/index.css">
   <title>Artix Linux - Home</title>
 </head>
 <body>
-  <nav class="navegador bg-dark sticky-lg-top">
+  <nav class="navegador fixed">
     <a href="./index.html">
       <img src="./src/assets/arch.png" alt="Arch Logo">
     </a>
@@ -39,7 +38,7 @@
     <h3>Artix Linux is a rolling-release distribution, based on Arch Linux.</h3>
     <p>It uses real init systems, because PID1 must be simple, secure and stable</p>
   </section>
-  <main class="main bg-black"> <!-- main content -->
+  <main class="main"> <!-- main content -->
     <section class="articles">
       <article class="article-content "0>
         
@@ -80,7 +79,7 @@
     </aside>
   </main>
   <footer class="footer bg-dark">
-    <section>
+    <!-- <section>
       <h4>Documentation</h4>
       <ul>
         <li><a href="https://wiki.artixlinux.org/" target="_blank">Wiki</a></li>
@@ -110,7 +109,7 @@
         <li><a href="" target="_blank">Donate</a></li>
         <li><a href="" target="_blank">Sponsors</a></li>
       </ul>
-    </section>
+    </section> -->
   </footer>
 </body>
 </html>
