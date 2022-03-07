@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./src/styles/index.css">
   <title>Artix Linux - Home</title>
 </head>
+
 <body>
-  <nav class="navegador fixed">
+  <nav class="navegador fixed-top">
     <a href="./index.html">
       <img src="./src/assets/arch.png" alt="Arch Logo">
     </a>
@@ -38,13 +41,43 @@
     <h3>Artix Linux is a rolling-release distribution, based on Arch Linux.</h3>
     <p>It uses real init systems, because PID1 must be simple, secure and stable</p>
   </section>
-  <main class="main"> <!-- main content -->
-    <section class="articles">
-      <article class="article-content "0>
-        
+  <h3>Recent News</h3>
+  <main class="main">
+    <!-- main content -->
+    <section class="articles bg-dark">
+      <article>
+        <h4>FFMPEG upgrade <span>2022-01-25</span></h4>
+        <div>
+          The latest ffmpeg-2:5.0-3 was accidentally pulled earlier than intended from our staging ([goblins]) repository. If you haven't upgraded yet and use stuff with ffmpeg dependencies from the Arch repositories, refrain from upgrading for now.
+          If you have already upgraded, you can either <a href="https://forum.artixlinux.org/index.php/topic,3582.msg23255.html#msg23255" target="_blank">downgrade to the status-quo ante</a>, using the Artix and Arch package archives or install <a href="https://forum.artixlinux.org/index.php/topic,3582.msg23255.html#msg23255" target="_blank">ffmpeg-compat-58 from [galaxy] (easier)</a>.
+        </div>
+        <caption>
+          <div>sudo pacman -Sy --asdeps ffmpeg-compat-58</div>
+          <div>or, if you get dependency errors</div>
+        </caption>
+      </article>
+      <article>
+        <h4>The first official installation images of 2022 <span>2022-01-23</span></h4>
+        <div>
+          After extensive testing and bug squashing, we are pleased to announce <a href="https://artixlinux.org/download.php" target="_blank">new stable ISO releases.</a>
+        </div>
+        <caption>
+          <div>sudo pacman -Sy --asdeps ffmpeg-compat-58</div>
+          <div>or, if you get dependency errors</div>
+        </caption>
+      </article>
+      <article>
+        <h4>Support for dinit is now official <span>2021-11-08</span></h4>
+        <div>
+          After extensive testing and bug squashing, we are pleased to announce <a href="https://artixlinux.org/download.php" target="_blank">new stable ISO releases.</a>
+        </div>
+        <caption>
+          <div>sudo pacman -Sy --asdeps ffmpeg-compat-58</div>
+          <div>or, if you get dependency errors</div>
+        </caption>
       </article>
     </section>
-    <aside class="aside">
+    <aside class="aside text-white bg-dark">
       <section>
         <h4>Documentation</h4>
         <ul>
@@ -77,9 +110,10 @@
         </ul>
       </section>
     </aside>
+
   </main>
   <footer class="footer bg-dark">
-    <!-- <section>
+    <section>
       <h4>Documentation</h4>
       <ul>
         <li><a href="https://wiki.artixlinux.org/" target="_blank">Wiki</a></li>
@@ -109,7 +143,8 @@
         <li><a href="" target="_blank">Donate</a></li>
         <li><a href="" target="_blank">Sponsors</a></li>
       </ul>
-    </section> -->
+    </section>
   </footer>
 </body>
+
 </html>

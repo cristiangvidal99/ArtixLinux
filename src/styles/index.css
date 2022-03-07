@@ -1,5 +1,9 @@
+:root {
+  --blackmain: #2A2A2A;
+}
 html {
   font-family: 'Roboto Mono', monospace;
+  background-color: var(--blackmain);
 }
 .navegador {
   display: flex;
@@ -7,7 +11,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #0005;
+  background-color: rgba(0, 0, 0, 0.24);
 }
 .navegador div a {
   font-size: 1.6rem;
@@ -18,17 +22,16 @@ html {
 .navegador-links {
   display: flex;
   gap: 1rem;
+  color: #FFF;
 }
 .navegador-links a {
-  text-decoration: none;
-}
-.navegador-links a:hover {
   color: #FFF;
   text-decoration: none;
 }
 .header{
   background-image: url(https://images4.alphacoders.com/442/44298.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 80vh;
@@ -45,37 +48,27 @@ html {
   color: white;
   font-size: 4rem;
 }
+.main {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+}
+.aside {
+
+}
+.articles {
+  color: #FFF;
+}
 .description {
-  position: relative;
-  margin: auto;
-  top: -5.5rem;
-  width: 60%;
+  width: 100%;
   padding: 3rem;
   background-color: #0F3147;
-  border: 2px solid #FFF;
 }
 .description h3, p {
   color: #FFF;
   text-align: center;
 }
-.main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-  width: 30vh;
-  border: 2px solid #FFF;
-  border-radius: 2px;
-  box-shadow: 2px #black;
-}
-.footer {
+.footer { 
   display: flex;
   flex-direction: row;
   justify-content: center;
